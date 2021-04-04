@@ -714,8 +714,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`tile1`, function (sprite, loc
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Flier, function (sprite, otherSprite) {
-    info.changeLifeBy(-1)
-    sprite.say("Ow!", invincibilityPeriod * 1.5)
+    info.changeLifeBy(1)
+    sprite.say("Ow! I Ded", invincibilityPeriod * 1.5)
     music.powerDown.play()
     pause(invincibilityPeriod * 1.5)
 })
